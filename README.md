@@ -1,6 +1,7 @@
 Hello. If you are reading this then you are doing a deep dive in my GitHub profile. I hope you enjoy!!
 
-1/7/2025 - JSON Builder - C++
-  This program takes in a map (#include <map>) and makes it into a JSON. It currently only works with <string, int> pairs as it manually adds the ""s
+1/7/2026 - JSON Builder - C++
+  Will get to this haha
 
-  Next iteration will detect the data type of the key and value, then accordingly use correct punctuiation!
+1/21/2026 - Slot machine - Python
+  Recreating my first ever full program written. Meant to be fun! And teach me some python syntax beyond my leetcoding!
