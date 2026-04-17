@@ -241,46 +241,65 @@ Force sumForces(Force f1, Force f2) { // for finding the total sum of 2 forces, 
 }
 
 
-#include "raylib.h"
-#include <vector>
-#include <string>
-#include <iostream>
 
-// assumes you already have:
-// std::vector<Object> Objects;
-// std::vector<Force> arrForces;
-// collisionHandle(Objects);
+
 
 int main() {
     Object p1(1, 50);
     Object p2(1, 50); // initialize 2 objects
+    Object p3(1, 25);
+    Object p4(1, 40);
+    Object p5(1, 25);
 
     Force f1;
     Force f2;
-    f1.force = 10;
+    Force f3;
+    Force f4;
+    Force f5;
+    f1.force = 4;
     f1.theta = 0; // force 1 is 10 in the x direction
     f2.force = 9.8; // f2 is gravity
     f2.theta = degreeToRadian(-90); // initialize 2 forces
+    f3.force = (10.58);
+    f3.theta = degreeToRadian(340);
+    f4.force = (10.58);
+    f4.theta = degreeToRadian(340);
+    f5.theta = degreeToRadian(-90); // force 1 is 10 in the x direction
+    f5.force = 9.8; // f2 is gravity
 
 
     p1.setPos(100, 100);
     p2.setPos(200, 300);
     p1.setVel(0, 0);
     p2.setVel(1, 1);
+    p3.setPos(100, 200);
+    p3.setVel(-5, -10);
+    p4.setPos(80, 80);
+    p4.setVel(5, -10);
+    p5.setPos(40, 40);
+    p5.setVel(0, 5);
 
     std::cout << detectCollision(p1, p2) << "\n";
     std::vector<Object> Objects;
     Objects.push_back(p1);
     Objects.push_back(p2);
+    Objects.push_back(p3);
+    Objects.push_back(p4);
+    Objects.push_back(p5);
 
 
     std::vector<Force> arrForces;
     arrForces.push_back(f1);
     arrForces.push_back(f2);
+    arrForces.push_back(f3);
+    arrForces.push_back(f4);
+    arrForces.push_back(f5);
 
     std::vector<Color> colors;
     colors.push_back(RED);
     colors.push_back(BLUE);
+    colors.push_back(YELLOW);
+    colors.push_back(GREEN);
 
     double deltaT = 0.1;
 
