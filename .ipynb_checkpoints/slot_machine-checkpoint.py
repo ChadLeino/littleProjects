@@ -1,7 +1,7 @@
 import random
 
-int balance = 100
-int bet = 10
+balance = 100
+bet = 10
 
 
 
