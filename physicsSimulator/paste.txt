@@ -1,0 +1,4 @@
+
+    std::vector<Force> arrForces;
+    arrForces.push_back(f1);
+    arrForces.push_back(f2);
