@@ -1,0 +1,14 @@
+gui:
+  title: Hexaboard Test GUI
+  theme: dark
+tests:
+  power_supply:
+    enabled: true
+    voltage: 1.65
+  i2c:
+    enabled: false
+  charge_injection:
+    enabled: true
+    channels:
+      - 1
+      - 2
